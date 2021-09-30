@@ -14,7 +14,7 @@ const baseUrl = 'https://api.football-data.org/v2';
  * Get all matches for Barca
  * @param {*} status 
  */
-const getMatches = async (status='FINISHED') => {
+const getMatches = async (status='') => {
     const path = `/teams/81/matches?status=${status}`;
     const response = await axios.get(path, {
         baseURL: baseUrl,
